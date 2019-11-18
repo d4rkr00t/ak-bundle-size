@@ -1,5 +1,9 @@
+const path = require("path");
 const { when } = require("@craco/craco");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
+const timestamp = String(Date.now());
+const reportPath = path.join(__dirname, "reports", timestamp);
 
 module.exports = {
   webpack: {
@@ -10,7 +14,8 @@ module.exports = {
           new BundleAnalyzerPlugin({
             analyzerMode: "static",
             generateStatsFile: true,
-            statsFilename: "stats." + Date.now() + ".json"
+            reportFilename: path.join(reportPath, "report.html"),
+            statsFilename: path.join(reportPath, "stats.json")
           })
         ],
         []
