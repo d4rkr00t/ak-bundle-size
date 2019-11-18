@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@atlaskit/renderer": "^51.1.1",
     "@craco/craco": "^5.4.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -32,8 +33,8 @@
     ]
   },
   "devDependencies": {
-    "@atlaskit/editor-core": "^112.44.4",
-    "@atlaskit/media-core": "^30.0.14",
+    "@atlaskit/editor-core": "latest",
+    "@atlaskit/media-core": "latest",
     "react-intl": "2.6.0"
   }
 }
