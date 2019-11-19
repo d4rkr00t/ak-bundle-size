@@ -14,8 +14,7 @@
     "analyze": "ANALYZE=true npm run build",
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
-    "eject": "craco eject"
+    "clean": "rm -rf node_modules && rm yarn.lock && yarn"
   },
   "eslintConfig": {
     "extends": "react-app"
