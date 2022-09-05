@@ -1,8 +1,9 @@
 import React from "react";
-import { Browser } from "@atlaskit/media-picker";
+import * as picker from "@atlaskit/media-picker";
 
 function App() {
-  <Browser />;
+  console.log(picker);
+  return <div></div>;
 }
 
 export default App;
